@@ -32,7 +32,7 @@ function App() {
   };
   const getLocalTodos = () => {
     if (localStorage.getItem("todos")===null){
-      localStorage.setItem("toods",JSON.stringify([]));
+      localStorage.setItem("todos",JSON.stringify([]));
     }else{
       setTodos(JSON.parse(localStorage.getItem("todos")));
     }
